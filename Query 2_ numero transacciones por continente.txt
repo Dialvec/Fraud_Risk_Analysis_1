@@ -1,0 +1,4 @@
+select count(1), DATEPART(month, created_at), continent_name
+from transactions t inner join countries c
+on c.code = convert(t.card_country as number)
+group by DATEPART(month, created_at), continent_name

@@ -1,0 +1,8 @@
+select t.created_at, t.amount, p.name, m.merchant_name, c.name
+from transactions t inner join products
+on t.transaction_id = p.transaction_id
+inner join merchants m
+on t.merchant_id = m.merchant_id and p.merchant_id = m.merchant_id
+inner join countries c
+on c.code = m.country_code
+
