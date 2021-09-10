@@ -1,2 +1,1 @@
-# PayU
- PayU - Fraud Risk Analysit Technical assesment
+Fraud Risk Analysis exploration
